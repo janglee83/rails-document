@@ -6,9 +6,9 @@ This repo helps Software Engineer want to upgrade his/herself on Ruby on Rails
 | # Part |                                                           Topics                                                            |
 | ----- | :-------------------------------------------------------------------------------------------------------------------------: |
 | 01    | [Giới thiệu về mô hình MVC]() |
-| 02    |                      [Cài đặt ruby và ruby on rails]()                       |
-| 03    |                      [Cấu trúc dự án rails]()                       |
-| 04    |                      [Setup database trong rails]()                       |
+| 02    |                      [Cài đặt ruby và Ruby on Rails]()                       |
+| 03    |                      [Cấu trúc dự án Rails]()                       |
+| 04    |                      [Setup database trong Rails]()                       |
 | 05    |                      [Gem trong Rails]()                       |
 | 06    |                      [Bundler trong Rails]()                       |
 | 07    |                      [Active Record Pattern]()                       |
