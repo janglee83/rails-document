@@ -154,13 +154,13 @@ Vậy bạn đã thành công tạo view rồi, tuy nhiên nếu chưa có model
 - Giải thích code:
   - `class CreateArticles` được kế thừa bởi module `Migration` nằm trong modle `ActiveRecord`
 
-        *oop chắc không cần phải nói nhỉ :))*
+      *oop chắc không cần phải nói nhỉ :))*
 
-        *module và Active Record Pattern sẽ được trình bày ở topic nâng cao Rails*
+      *module và Active Record Pattern sẽ được trình bày ở topic nâng cao Rails*
 
   - `create_table` là operation nằm trong module `ActiveRecord::SchemaStatements` và module này include `ActiveRecord::Migration`
 
-        *Cách phát triển bản thân với rails docs mình sẽ trình bày ở topic khác*
+      *Cách phát triển bản thân với rails docs mình sẽ trình bày ở topic khác*
 
   - `create_table` sẽ tự động tạo table với tên table là parameter thứ nhất
   - `create_table` sẽ tự thêm côt `id` là auto-incrementing primary key
