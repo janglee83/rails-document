@@ -1,7 +1,7 @@
-# Basic app using rails
+# Basic router trong Rails
 
 ---
-- [Basic app using rails](#basic-app-using-rails)
+- [Basic router trong Rails](#basic-router-trong-rails)
   - [Command](#command)
   - [Basic view](#basic-view)
   - [Basic model](#basic-model)
