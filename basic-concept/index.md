@@ -156,7 +156,7 @@ Vậy bạn đã thành công tạo view rồi, tuy nhiên nếu chưa có model
 
       *oop chắc không cần phải nói nhỉ :))*
 
-      *module và Active Record Pattern sẽ được trình bày ở topic nâng cao Rails*
+      *Active Record Pattern và module trong R sẽ được trình bày ở topic nâng cao Rails*
 
   - `create_table` là operation nằm trong module `ActiveRecord::SchemaStatements` và module này include `ActiveRecord::Migration`
 
