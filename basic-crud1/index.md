@@ -223,6 +223,8 @@ Khi bạn muốn tạo 1 instant, bình thường bạn sẽ phải làm rất n
 
 - Tại view:
   - Phía rails cung cấp helper `form_with` khá thuận tiện cho việc tạo form, bạn đọc có thể dọc api [tại đây](https://api.rubyonrails.org/v7.0.4.2/classes/ActionView/Helpers/FormHelper.html#method-i-form_with) để hiểu cơ chế tạo form của `form_with`
+  - Chú ý, với param `model:` bạn có thể truyền array, instant hoặc string, thể hiện giá trị url. Ví dụ:
+    - 
   - Với trường hợp trên, hệ thống sẽ render ra code html như sau:
 
     ```html
@@ -280,7 +282,7 @@ Khi bạn muốn tạo 1 instant, bình thường bạn sẽ phải làm rất n
     ```
   - Bạn đọc có thể đọc api của `full_message_for` [tại đây](https://api.rubyonrails.org/v7.0.4.2/classes/ActiveModel/Errors.html#method-i-full_messages_for) để hiểu cách sử dụng
 
-3. Update code
+1. Update code
   - Sử dụng strong parameters:
     - Trong hàm `create` tại controller trên, mình tạo instant của `Articles` bằng cách sử dụng trực tiếp `params`. Tuy nhiên, cách này chưa tối ưu. Vì nếu mà người dùng truyền sai định dạng, sẽ có thể gây khó khăn trong việc handle error. khi mở rộng hệ thống, nếu cứ sử dụng cách viết này => gây rất nhiều khó khăn.
     - Thế nên, khi handle các parameters được truyền vào, chúng ta nên sử dụng 1 tính năng của Rails cung cấp, là **Strong Parameters**. Để thực hiện, các bạn update controller bằng cách thêm đoạn code dưới đây:
@@ -386,5 +388,5 @@ Khi bạn muốn tạo 1 instant, bình thường bạn sẽ phải làm rất n
             </li>
         ```
         Chúc các bạn thành công!!!
-        
+
 Vậy là các bạn đã hoàn thành CRUD đơn giản trong rails rồi đó, các bạn hãy tự thưởng mình một tràng pháo tay đi nào!! Các ban đã vất vả rồi
