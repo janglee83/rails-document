@@ -33,7 +33,7 @@ CRUD là các operation cơ bản nhất của các web hiện hành, vì vậy,
             @article = Article.find(params[:id])
         end
         ```
-     - Như giải thích tại topic trước, param `to:` sẽ call function, đồng thời render ra file `erb` tương ứng, thế nên các bạn cần tạo file `show.html.erb` trong thư mục `articles` của `view` và thêm doạn code dưới đây:
+     - Như giải thích tại topic trước, param `to:` sẽ call function, đồng thời render file `erb` tương ứng, thế nên các bạn cần tạo file `show.html.erb` trong thư mục `articles` của `view` và thêm doạn code dưới đây:
 
         ```erb
             <h1>
@@ -93,13 +93,14 @@ CRUD là các operation cơ bản nhất của các web hiện hành, vì vậy,
 
         ![result](images/routes-command.png)
 
+    Có thế giải thích thêm (.:format) trong hình nữa
     - Giải thích:
       - `resources` cung cấp cho bạn 1 giải pháp viết routes nhanh hơn rất nhiều
       - Các bạn nhìn hình ảnh trên, các bạn sẽ thắc mắc `Prefix`, `Verb`, ... là gì đúng không?
       - Để nói `Verb`, `Url` và `Controller#Action` mình sẽ không nói nhiều vì giải thích quá nhiều rồi.
       - Còn `Prefix` là gì nhỉ? Cái giá trị này sẽ liên quan đến các operation `Router Helper` có sẵn của Rails. Mình sẽ lấy ví dụ `_url` hoặc `_path`. Giá trị `Prefix` sẽ được cộng với các `router helper` như trên nhằm đưa ra một các viết gọn hơn rất nhiều... Khó hiểu nhỉ?
 
-        - Ví dụ: mình lấy `Prefix` có giá trị là `articles`, khi thêm với router helper `_path`, bạn sẽ được 1 helper tương ứng là `articles_path`, và cái này có nghĩa là `"/articles/#{article.id}"`, và trong file `app/views/articles/index.html.erb`, bạn có thể dùng như sau:
+        - Ví dụ: mình lấy `Prefix` có giá trị là `article`, khi thêm với router helper `_path`, bạn sẽ được 1 helper tương ứng là `article_path`, và cái này có nghĩa là `"/article/#{article.id}"`, và trong file `app/views/articles/index.html.erb`, bạn có thể dùng như sau:
 
             ```erb
                 <h1>Articles</h1>
